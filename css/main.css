@@ -11,8 +11,8 @@
 }
 * {-webkit-user-select: none; -moz-user-select: none; user-select: none;}
 *:focus {outline: 0;}
-html{height:100%;}
-body {background: url('../img/background_photo.jpg') center center fixed; position:relative; height:100%; padding:90px 0;}
+html{height:100%; overflow: hidden;}
+body {background: url('../img/background_photo.jpg') center center fixed; position:relative; height:100%; padding:90px 0; overflow: hidden;}
 img {width:auto;}
 
 header, footer {position:fixed; top:0; left:0; width:100%; background:#fff; padding:25px 0; box-shadow: 0 4px 4px rgba(0,0,0,.4);}
