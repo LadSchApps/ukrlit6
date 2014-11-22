@@ -13,6 +13,12 @@ $.fn.multimedia_portfolio = function(options) {
 	if($(window).width() > 980) {
 		var uniqueID = new Date();
 		var rel_id=uniqueID.getTime();
+        var isiPhone = navigator.userAgent.toLowerCase().indexOf("iphone");
+        var isiPad = navigator.userAgent.toLowerCase().indexOf("ipad");
+        var isiPod = navigator.userAgent.toLowerCase().indexOf("ipod");
+        var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+        var isBlackberry = navigator.userAgent.toLowerCase().indexOf("BlackBerry");
+        var isIE = navigator.userAgent.toLowerCase().indexOf("IEMobile");
 		var mousewheelposition = 0;
 		var defaultwidth = 320, defaultheight = 210;
 		var jsFolder = "/ukrlit.github.io/js/vendor/";
@@ -135,7 +141,8 @@ $.fn.multimedia_portfolio = function(options) {
 				      caroussel_portfolio_vue(mousewheelposition, portfolio, elements, settings, ratio_largeur, false);	     
 			      } 
 		      });
-		      if(jQuery.browser.mobile) {$(".portfolio-container").css('overflow-x', 'scroll'); $(".portfolio-container ul.multimedia-portfolio").css('width', def_element_width*elements.length);$(".slider-container").hide();}
+
+		      if(isiPhone > -1 || isiPad > -1 || isiPod > -1) || isAndroid || isBlackberry > -1 || isIE > -1){$(".portfolio-container").css('overflow-x', 'scroll'); $(".portfolio-container ul.multimedia-portfolio").css('width', def_element_width*elements.length);$(".slider-container").hide();}
 		}
 		
 		$(".portfolio-img a").fancybox({padding: 1, 'onStart' : function() {$('.flv-type').css('visibility','hidden');}, 'onClosed': function(){caroussel_portfolio_vue(mousewheelposition, portfolio, elements, settings, ratio_largeur, false);}});
