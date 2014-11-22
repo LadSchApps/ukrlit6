@@ -142,7 +142,7 @@ $.fn.multimedia_portfolio = function(options) {
 			      } 
 		      });
 
-		      if(isiPhone > -1 || isiPad > -1 || isiPod > -1) || isAndroid || isBlackberry > -1 || isIE > -1){$(".portfolio-container").css('overflow-x', 'scroll'); $(".portfolio-container ul.multimedia-portfolio").css('width', def_element_width*elements.length);$(".slider-container").hide();}
+		      if(isiPhone > -1 || isiPad > -1 || isiPod > -1 || isAndroid || isBlackberry > -1 || isIE > -1){$(".portfolio-container").css('overflow-x', 'scroll'); $(".portfolio-container ul.multimedia-portfolio").css('width', def_element_width*elements.length);$(".slider-container").hide();}
 		}
 		
 		$(".portfolio-img a").fancybox({padding: 1, 'onStart' : function() {$('.flv-type').css('visibility','hidden');}, 'onClosed': function(){caroussel_portfolio_vue(mousewheelposition, portfolio, elements, settings, ratio_largeur, false);}});
