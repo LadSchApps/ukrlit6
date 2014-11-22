@@ -14,24 +14,24 @@
     <author href="http://ladschool.ucoz.ua/" email="ladschool@gmail.com">
         Ладигівська навчально-виховний комплекс 
     </author>
+    <preference name="orientation" value="landscape" />
 
+    <icon src="img/favicon-192x192.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="img/favicon-160x160.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="img/favicon-96x96.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="img/favicon-16x16.png" gap:platform="android" gap:density="xhdpi" />
+    <icon src="img/favicon-32x32.png" gap:platform="android" gap:density="xxhdpi" />
+
+    <icon src="img/mstile-144x144.png" gap:platform="winphone" />
+    <icon gap:platform="winphone" gap:role="background" />
+
+    <gap:splash src="img/favicon-192x192.png" gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="img/favicon-160x160.png" gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="img/favicon-96x96.png" gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="img/favicon-16x16.png" gap:platform="android" gap:density="xhdpi" />
+    <gap:splash src="img/favicon-32x32.png" gap:platform="android" gap:density="xxhdpi" />
+
+    <gap:splash src="img/mstile-144x144.png" gap:platform="winphone" />
 </widget>
 
-<preference name="orientation" value="landscape" />
 
-<icon src="img/favicon-192x192.png" gap:platform="android" gap:density="ldpi" />
-<icon src="img/favicon-160x160.png" gap:platform="android" gap:density="mdpi" />
-<icon src="img/favicon-96x96.png" gap:platform="android" gap:density="hdpi" />
-<icon src="img/favicon-16x16.png" gap:platform="android" gap:density="xhdpi" />
-<icon src="img/favicon-32x32.png" gap:platform="android" gap:density="xxhdpi" />
-
-<icon src="img/mstile-144x144.png" gap:platform="winphone" />
-<icon gap:platform="winphone" gap:role="background" />
-
-<gap:splash src="img/favicon-192x192.png" gap:platform="android" gap:density="ldpi" />
-<gap:splash src="img/favicon-160x160.png" gap:platform="android" gap:density="mdpi" />
-<gap:splash src="img/favicon-96x96.png" gap:platform="android" gap:density="hdpi" />
-<gap:splash src="img/favicon-16x16.png" gap:platform="android" gap:density="xhdpi" />
-<gap:splash src="img/favicon-32x32.png" gap:platform="android" gap:density="xxhdpi" />
-
-<gap:splash src="img/mstile-144x144.png" gap:platform="winphone" />
